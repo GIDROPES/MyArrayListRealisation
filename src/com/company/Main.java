@@ -12,6 +12,6 @@ public class Main {
         myArrayList.toMyStringDoubles();
         myArrayList.removeDouble();
         myArrayList.toMyStringDoubles();
-
+        //
     }
 }
