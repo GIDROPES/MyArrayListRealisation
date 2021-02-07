@@ -4,16 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Нужно создавать пустой массив с длиной 0 и запихивать его в конструктор класса MyArrayList, как в примере ниже. Я там тестировал свои функции
+        MyStackRealisation<String> myStack = new MyStackRealisation<String>();
 
-        Double[] doubles = {};
-	    MyArrayList myArrayList = new MyArrayList(doubles);
-	    myArrayList.add(4.7);
-        myArrayList.add(50.15);
-        myArrayList.add(4546.1);
-        myArrayList.toMyStringDoubles();
-        myArrayList.removeDouble();
-        myArrayList.toMyStringDoubles();
-        //
+        System.out.println(myStack.getSize());
+        myStack.push("Привет привет");
+        System.out.println(myStack.peek());
+        myStack.push("Как ваши дела");
+        myStack.push("Дела делишки");
+        System.out.println(myStack.peek());
+        myStack.push("Штаны штанишки");
+        myStack.myStackToString();
+        myStack.pop();
+        System.out.println(" ");
+        myStack.myStackToString();
     }
 }
